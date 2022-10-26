@@ -15,7 +15,7 @@ pub fn factorial(num: u64) -> u64 {
         return 1;
     }
 
-    1..=num.fold(1_u64, |r, i| r * i)
+    (1..=num).fold(1_u64, |r, i| r * i)
 }
 
 #[cfg(test)]
